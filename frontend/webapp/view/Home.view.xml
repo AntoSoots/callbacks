@@ -1,0 +1,31 @@
+<mvc:View
+	controllerName="sap.ui.demo.basicTemplate.controller.Home"
+	displayBlock="true"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page
+		id="page"
+		title="{i18n>title}">
+		<content>
+			<Table id="table" inset="true" >
+				<columns>
+					<Column minScreenWidth="Medium" demandPopin="true" hAlign="Left">
+						<Label text="{i18n>time}" design="Bold"/>
+					</Column>
+					<Column visible="false">
+						<Label text="{i18n>caller_id}"/>
+					</Column>
+					<Column minScreenWidth="Medium" demandPopin="true" hAlign="Left">
+						<Label text="{i18n>name}" design="Bold"/>
+					</Column>
+					<Column minScreenWidth="Medium" demandPopin="true" hAlign="Right">
+						<Label text="{i18n>number}" design="Bold"/>
+					</Column>
+					<Column demandPopin="true" hAlign="Right">
+						<Label text="{i18n>delete}" design="Bold"/>
+					</Column>
+				</columns>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
